@@ -1,0 +1,23 @@
+{
+  "name": "siroc-sandbox",
+  "private": true,
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "siroc"
+  },
+  "devDependencies": {
+    "siroc": "^0.16.0",
+    "typescript": "^4.4.3"
+  },
+  "packageManager": "yarn@1.22.11"
+}
